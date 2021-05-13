@@ -10,7 +10,7 @@ I hope you enjoy!
 
 :brazil:
 
-Este projeto foi meu trabalho final no Curso de Introdução à Ciência da Computação de Harvard.
+Este projeto foi meu trabalho final do Curso de Introdução à Ciência da Computação de Harvard.
 
 No futuro, pretendo implementar mais sistemas de medição, adicionar linguagens e também pensei em gráficos para melhorar a visualização geral.
 
