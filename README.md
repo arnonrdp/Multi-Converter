@@ -1,19 +1,19 @@
-This project was my final work on the Harvard Computer Science Introduction Course.
+# multi-converter
 
-In the future, I intend to implement more measurement systems, add languages and I also thought about graphics to improve the general visualization.
+## Project setup
+```
+npm install
+```
 
-You can check the working environment by clicking on the link beside.
+### Compiles and hot-reloads for development
+```
+npm run serve
+```
 
-I hope you enjoy!
+### Compiles and minifies for production
+```
+npm run build
+```
 
-<hr>
-
-:brazil:
-
-Este projeto foi meu trabalho final do Curso de Introdução à Ciência da Computação de Harvard.
-
-No futuro, pretendo implementar mais sistemas de medição, adicionar linguagens e também pensei em gráficos para melhorar a visualização geral.
-
-Você pode verificar o ambiente de trabalho clicando no link ao lado.
-
-Espero que você goste!
+### Customize configuration
+See [Configuration Reference](https://cli.vuejs.org/config/).
