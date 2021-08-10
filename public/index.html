@@ -8,16 +8,7 @@
   <title>
     <%= htmlWebpackPlugin.options.title %>
   </title>
-</head>
-<body>
-  <noscript>
-    <strong>We're sorry but <%= htmlWebpackPlugin.options.title %> doesn't work properly without JavaScript enabled.
-        Please enable it to continue.</strong>
-  </noscript>
-  <div id="app"></div>
-  <!-- built files will be auto injected -->
-</body>
-<script type="text/javascript">
+  <script type="text/javascript">
   $(document).ready(function () {
     document.ontouchmove = function (e) {
       e.preventDefault();
@@ -27,5 +18,14 @@
     window.scrollTo(0, 0);
     document.body.scrollTop = 0;
   }
-</script>
+  </script>
+</head>
+<body>
+  <noscript>
+    <strong>We're sorry but <%= htmlWebpackPlugin.options.title %> doesn't work properly without JavaScript enabled.
+        Please enable it to continue.</strong>
+  </noscript>
+  <div id="app"></div>
+  <!-- built files will be auto injected -->
+</body>
 </html>
