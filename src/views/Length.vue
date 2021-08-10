@@ -3,132 +3,41 @@
 		<tr>
 			<td colspan="2"><h2>Metric</h2></td>
 		</tr>
-		<tr>
-			<td><input id="Kilometre" type="number" v-model="Kilometre" /></td>
-			<td><label for="Kilometre">Kilometre (km)</label></td>
-		</tr>
-		<tr>
-			<td><input id="metreIn" type="number" v-model="Metre" /></td>
-			<td><label for="metreIn">Metre (m)</label></td>
-		</tr>
-		<tr>
-			<td><input id="decimetreIn" type="number" v-model="Decimetre" /></td>
-			<td><label for="decimetreIn">Decimetre (dm)</label></td>
-		</tr>
-		<tr>
-			<td><input id="centimetreIn" type="number" v-model="Centimetre" /></td>
-			<td><label for="centimetreIn">Centimetre (cm)</label></td>
-		</tr>
-		<tr>
-			<td><input id="milimetreIn" type="number" v-model="Millimetre" /></td>
-			<td><label for="milimetreIn">Millimetre (mm)</label></td>
-		</tr>
-		<tr>
-			<td><input id="micrometreIn" type="number" v-model="Micrometre" /></td>
-			<td><label for="micrometreIn">Micrometre (µm)</label></td>
-		</tr>
-		<tr>
-			<td><input id="nanometreIn" type="number" v-model="Nanometre" /></td>
-			<td><label for="nanometreIn">Nanometre (nm)</label></td>
-		</tr>
-		<tr>
-			<td><input id="angstromIn" type="number" v-model="Angstrom" /></td>
-			<td><label for="angstromIn">Angstrom (Å)</label></td>
-		</tr>
-
+		<ScaleInput v-model="Kilometre" label="Kilometre (km)" />
+		<ScaleInput v-model="Metre" label="Metre (m)" />
+		<ScaleInput v-model="Decimetre" label="Decimetre (dm)" />
+		<ScaleInput v-model="Centimetre" label="Centimetre (cm)" />
+		<ScaleInput v-model="Millimetre" label="Millimetre (mm)" />
+		<ScaleInput v-model="Micrometre" label="Micrometre (µm)" />
+		<ScaleInput v-model="Nanometre" label="Nanometre (nm)" />
+		<ScaleInput v-model="Angstrom" label="Angstrom (Å)" />
 		<tr>
 			<td colspan="2"><h2>British / American</h2></td>
 		</tr>
-		<tr>
-			<td><input id="leagueIn" type="number" v-model="League" /></td>
-			<td><label for="leagueIn">League</label></td>
-		</tr>
-		<tr>
-			<td><input id="mileIn" type="number" v-model="Mile" /></td>
-			<td><label for="mileIn">Mile (mi)</label></td>
-		</tr>
-		<tr>
-			<td><input id="furlongIn" type="number" v-model="Furlong" /></td>
-			<td><label for="furlongIn">Furlong</label></td>
-		</tr>
-		<tr>
-			<td><input id="chainIn" type="number" v-model="Chain" /></td>
-			<td><label for="chainIn">Chain</label></td>
-		</tr>
-		<tr>
-			<td><input id="rodIn" type="number" v-model="Rod" /></td>
-			<td><label for="rodIn">Rod (rd)</label></td>
-		</tr>
-		<tr>
-			<td><input id="yardIn" type="number" v-model="Yard" /></td>
-			<td><label for="yardIn">Yard (yd)</label></td>
-		</tr>
-		<tr>
-			<td><input id="footIn" type="number" v-model="Foot" /></td>
-			<td><label for="footIn">Foot (ft)</label></td>
-		</tr>
-		<tr>
-			<td><input id="linkIn" type="number" v-model="Link" /></td>
-			<td><label for="linkIn">Link</label></td>
-		</tr>
-		<tr>
-			<td><input id="handIn" type="number" v-model="Hand" /></td>
-			<td><label for="handIn">Hand</label></td>
-		</tr>
-		<tr>
-			<td><input id="inchIn" type="number" v-model="Inch" /></td>
-			<td><label for="inchIn">Inch (in)</label></td>
-		</tr>
-		<tr>
-			<td><input id="thouIn" type="number" v-model="Thou" /></td>
-			<td><label for="thouIn">Thou (thou)</label></td>
-		</tr>
-
+		<ScaleInput v-model="League" label="League" />
+		<ScaleInput v-model="Mile" label="Mile (mi)" />
+		<ScaleInput v-model="Furlong" label="Furlong" />
+		<ScaleInput v-model="Chain" label="Chain" />
+		<ScaleInput v-model="Rod" label="Rod (rd)" />
+		<ScaleInput v-model="Yard" label="Yard (yd)" />
+		<ScaleInput v-model="Foot" label="Foot (ft)" />
+		<ScaleInput v-model="Link" label="Link" />
+		<ScaleInput v-model="Hand" label="Hand" />
+		<ScaleInput v-model="Inch" label="Inch (in)" />
+		<ScaleInput v-model="Thou" label="Thou (thou)" />
 		<tr>
 			<td colspan="2"><h2>Nautical</h2></td>
 		</tr>
-		<tr>
-			<td><input id="nauticalIn" type="number" v-model="Nautical" /></td>
-			<td><label for="nauticalIn">Nautical Mile</label></td>
-		</tr>
-		<tr>
-			<td><input id="fathomIn" type="number" v-model="Fathom" /></td>
-			<td><label for="fathomIn">Fathom</label></td>
-		</tr>
-
+		<ScaleInput v-model="Nautical" label="Nautical Mile" />
+		<ScaleInput v-model="Fathom" label="Fathom" />
 		<tr>
 			<td colspan="2"><h2>Astronomical</h2></td>
 		</tr>
-		<tr>
-			<td><input id="parsecIn" type="number" v-model="Parsec" /></td>
-			<td><label for="parsecIn">Parsec (pc)</label></td>
-		</tr>
-		<tr>
-			<td><input id="lightYearIn" type="number" v-model="LightYear" /></td>
-			<td><label for="lightYearIn">Light Year</label></td>
-		</tr>
-		<tr>
-			<td>
-				<input
-					id="astronomicalUnitIn"
-					type="number"
-					v-model="AstronomicalUnit"
-				/>
-			</td>
-			<td><label for="astronomicalUnitIn">Astronomical Unit (AE)</label></td>
-		</tr>
-		<tr>
-			<td>
-				<input id="lightMinuteIn" type="number" v-model="LightMinute" />
-			</td>
-			<td><label for="lightMinuteIn">Light Minute</label></td>
-		</tr>
-		<tr>
-			<td>
-				<input id="lightSecondIn" type="number" v-model="LightSecond" />
-			</td>
-			<td><label for="lightSecondIn">Light Second</label></td>
-		</tr>
+		<ScaleInput v-model="Parsec" label="Parsec (pc)" />
+		<ScaleInput v-model="LightYear" label="Light Year" />
+		<ScaleInput v-model="AstronomicalUnit" label="Astronomical Unit (AE)" />
+		<ScaleInput v-model="LightMinute" label="Light Minute" />
+		<ScaleInput v-model="LightSecond" label="Light Second" />
 		<tfoot>
 			<tr>
 				<td colspan="2">
@@ -141,12 +50,17 @@
 </template>
 
 <script>
+import ScaleInput from "@/components/ScaleInput.vue";
+
 export default {
 	name: "Length",
 	data: () => ({
 		decimal: 0,
 		baseInKm: 1000,
 	}),
+	components: {
+		ScaleInput,
+	},
 	computed: {
 		Kilometre: {
 			get: function () {

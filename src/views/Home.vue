@@ -1,8 +1,8 @@
 <template>
 	<div class="home">
-		<Cards scale="Temperature" path="temperature.svg" alt="termometer" />
-		<Cards scale="Length" path="length.svg" alt="ruler" />
-		<Cards scale="Time" path="time.svg" alt="clock" />
+		<Cards scale="Temperature" alt="termometer" />
+		<Cards scale="Length" alt="ruler" />
+		<Cards scale="Time" alt="clock" />
 	</div>
 </template>
 

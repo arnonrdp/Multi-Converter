@@ -79,6 +79,7 @@ body {
 }
 
 a {
+	font-size: 1rem;
 	font-weight: bold;
 	color: #253846;
 	text-decoration: none;
@@ -107,7 +108,7 @@ table tr td {
 
 input {
 	color: #fff;
-	font-size: 0.9rem;
+	font-size: 1rem;
 	text-align: right;
   outline: 0;
 	border: none;

@@ -1,7 +1,7 @@
 <template>
 	<router-link :to="scale">
 		<div class="card">
-			<img :src="path" :alt="alt" />
+			<img :src="scale + '.svg'" :alt="alt" />
 			<h2>{{ scale }}</h2>
 		</div>
 	</router-link>
@@ -10,7 +10,7 @@
 <script>
 export default {
 	name: "Cards",
-	props: ["scale", "path", "alt"],
+	props: ["scale", "alt"],
 };
 </script>
 

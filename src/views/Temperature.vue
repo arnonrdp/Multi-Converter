@@ -1,37 +1,13 @@
 <template>
 	<table>
-		<tr>
-			<td><input id="K" type="number" v-model="Kelvin" /></td>
-			<td><label for="K">Kelvin (K)</label></td>
-		</tr>
-		<tr>
-			<td><input id="C" type="number" v-model="Celsius" /></td>
-			<td><label for="C">Celsius (ºC)</label></td>
-		</tr>
-		<tr>
-			<td><input id="F" type="number" v-model="Fahrenheit" /></td>
-			<td><label for="F">Farenheit (ºF)</label></td>
-		</tr>
-		<tr>
-			<td><input id="Ra" type="number" v-model="Rankine" /></td>
-			<td><label for="Ra">Rankine (ºRa)</label></td>
-		</tr>
-		<tr>
-			<td><input id="Ro" type="number" v-model="Romer" /></td>
-			<td><label for="Ro">Rømer (ºRø)</label></td>
-		</tr>
-		<tr>
-			<td><input id="N" type="number" v-model="Newton" /></td>
-			<td><label for="N">Newton (ºN)</label></td>
-		</tr>
-		<tr>
-			<td><input id="D" type="number" v-model="Delisle" /></td>
-			<td><label for="D">Delisle (ºD)</label></td>
-		</tr>
-		<tr>
-			<td><input id="Re" type="number" v-model="Reaumur" /></td>
-			<td><label for="Re">Reaumur (ºRé)</label></td>
-		</tr>
+		<ScaleInput v-model="Kelvin" label="Kelvin (K)" />
+		<ScaleInput v-model="Celsius" label="Celsius (ºC)" />
+		<ScaleInput v-model="Fahrenheit" label="Fahrenheit (ºF)" />
+		<ScaleInput v-model="Rankine" label="Rankine (ºRa)" />
+		<ScaleInput v-model="Romer" label="Rømer (ºRø)" />
+		<ScaleInput v-model="Newton" label="Newton (ºN)" />
+		<ScaleInput v-model="Delisle" label="Delisle (ºD)" />
+		<ScaleInput v-model="Reaumur" label="Reaumur (ºRé)" />
 		<tfoot>
 			<tr>
 				<td colspan="2">
@@ -44,12 +20,17 @@
 </template>
 
 <script>
+import ScaleInput from "@/components/ScaleInput.vue";
+
 export default {
 	name: "Temperature",
 	data: () => ({
 		decimal: 0,
 		baseInKelvins: 293.15,
 	}),
+	components: {
+		ScaleInput,
+	},
 	computed: {
 		Kelvin: {
 			get: function () {
