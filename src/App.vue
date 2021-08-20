@@ -2,7 +2,7 @@
 	<div id="nav">
 		<router-link to="/">Home</router-link> |
 		<router-link to="/temperature">Temperature</router-link> |
-    <router-link to="/length">Length</router-link> |
+		<router-link to="/length">Length</router-link> |
 		<router-link to="/time">Time</router-link>
 	</div>
 	<router-view />
