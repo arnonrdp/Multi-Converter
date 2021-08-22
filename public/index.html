@@ -8,16 +8,18 @@
   <title>
     <%= htmlWebpackPlugin.options.title %>
   </title>
+  <script async src="https://cdn.splitbee.io/sb.js"></script>
+
   <script type="text/javascript">
-  $(document).ready(function () {
-    document.ontouchmove = function (e) {
-      e.preventDefault();
+    $(document).ready(function () {
+      document.ontouchmove = function (e) {
+        e.preventDefault();
+      }
+    });
+    input.onfocus = function () {
+      window.scrollTo(0, 0);
+      document.body.scrollTop = 0;
     }
-  });
-  input.onfocus = function () {
-    window.scrollTo(0, 0);
-    document.body.scrollTop = 0;
-  }
   </script>
 </head>
 <body>
