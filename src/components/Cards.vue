@@ -1,45 +1,45 @@
 <template>
-	<router-link :to="scale">
-		<div class="card">
-			<img :src="scale + '.svg'" :alt="alt" />
-			<h2>{{ scale }}</h2>
-		</div>
-	</router-link>
+  <router-link :to="scale">
+    <div class="card">
+      <img :src="scale + '.svg'" :alt="alt" />
+      <h2>{{ scale }}</h2>
+    </div>
+  </router-link>
 </template>
 
 <script>
 export default {
-	name: "Cards",
-	props: ["scale", "alt"],
+  name: "Cards",
+  props: ["scale", "alt"],
 };
 </script>
 
 <style scoped>
 .card {
-	width: 12rem;
-	height: 12rem;
-	margin: 10px;
-	padding: 16px;
-	border-radius: 12px;
-	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-	transition: 0.3s;
+  align-items: center;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   display: flex;
   flex-direction: column;
+  height: 12rem;
   justify-content: center;
-  align-items: center;
+  margin: 10px;
+  padding: 16px;
+  transition: 0.3s;
+  width: 12rem;
 }
 
 .card:hover {
-	box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
 }
 
 .container {
-	padding: 2px 16px;
+  padding: 2px 16px;
 }
 
 img {
-	width: 6rem;
-	height: auto;
+  height: auto;
+  width: 6rem;
 }
 
 h2 {
