@@ -58,9 +58,7 @@ export default {
     decimal: 0,
     baseInKm: 1000,
   }),
-  components: {
-    ScaleInput,
-  },
+  components: { ScaleInput },
   computed: {
     Kilometre: {
       get: function() {

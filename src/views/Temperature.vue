@@ -28,9 +28,7 @@ export default {
     decimal: 0,
     baseInKelvins: 293.15,
   }),
-  components: {
-    ScaleInput,
-  },
+  components: { ScaleInput },
   computed: {
     Kelvin: {
       get: function() {

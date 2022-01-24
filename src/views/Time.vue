@@ -37,9 +37,7 @@ export default {
     decimal: 0,
     baseInYears: 1,
   }),
-  components: {
-    ScaleInput,
-  },
+  components: { ScaleInput },
   computed: {
     Years: {
       get: function() {
