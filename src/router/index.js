@@ -3,6 +3,10 @@ import Home from "../views/Home.vue";
 
 const routes = [
   {
+    path: "/:pathMatch(.*)*",
+    redirect: "/",
+  },
+  {
     path: "/",
     name: "Home",
     component: Home,
@@ -27,6 +31,10 @@ const routes = [
 const router = createRouter({
   history: createWebHistory(process.env.BASE_URL),
   routes,
+});
+
+router.beforeEach((to) => {
+  document.title = `Multi-Converter | ${to.name}`;
 });
 
 export default router;
