@@ -1,19 +1,17 @@
 <template>
   <div class="home">
-    <Cards scale="Temperature" alt="termometer" />
-    <Cards scale="Length" alt="ruler" />
-    <Cards scale="Time" alt="clock" />
+    <Card scale="Temperature" alt="termometer" />
+    <Card scale="Length" alt="ruler" />
+    <Card scale="Time" alt="clock" />
   </div>
 </template>
 
 <script>
-import Cards from "@/components/Cards.vue";
+import Card from "@/components/Card.vue";
 
 export default {
   name: "Home",
-  components: {
-    Cards,
-  },
+  components: { Card },
 };
 </script>
 
