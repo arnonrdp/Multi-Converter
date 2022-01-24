@@ -9,7 +9,7 @@
 
 <script>
 export default {
-  name: "Cards",
+  name: "Card",
   props: ["scale", "alt"],
 };
 </script>
