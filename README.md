@@ -1,19 +1,13 @@
-# multi-converter
+# Multi-Converter
 
-## Project setup
-```
-npm install
-```
+<p align="center">
+<a href="https://multi-converter.vercel.app"><img src="https://img.shields.io/website?url=https%3A%2F%2Fmulti-converter.vercel.app" /></a>
+<img src="https://img.shields.io/github/package-json/v/arnonrdp/multi-converter" />
+<img src="https://img.shields.io/github/repo-size/arnonrdp/multi-converter" />
+<img src="https://img.shields.io/github/commit-activity/m/arnonrdp/multi-converter" />
+<br />
+<img src="https://img.shields.io/github/package-json/dependency-version/arnonrdp/multi-converter/vue" />
+<img src="https://img.shields.io/github/package-json/dependency-version/arnonrdp/multi-converter/vue-router" />
 
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
-
-### Compiles and minifies for production
-```
-npm run build
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+<img src="./public/main.png" />
+</p>
