@@ -9,5 +9,5 @@
 <img src="https://img.shields.io/github/package-json/dependency-version/arnonrdp/multi-converter/vue" />
 <img src="https://img.shields.io/github/package-json/dependency-version/arnonrdp/multi-converter/vue-router" />
 
-<img src="./public/main.png" />
+<img src="./public/main.jpg" />
 </p>
