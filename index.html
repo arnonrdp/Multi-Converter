@@ -1,11 +1,13 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
     <!-- Defaults -->
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta charset="UTF-8" />
     <meta http-equiv="Content-Language" content="en" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1" />
+    
+    <!-- Theme / Favicon -->
+    <link rel="icon" href="/favicon.ico" />
 
     <!-- Primary Meta Tags -->
     <title>Multi Converter</title>
@@ -13,9 +15,6 @@
     <meta name="description" content="A place for you to convert everything you want." />
     <meta name="keywords" content="conversor, converter, length, temperature, time, Vue" />
     <meta name="author" content="Arnon Rodrigues" />
-
-    <!-- Theme / Favicon -->
-    <link rel="icon" href="<%= BASE_URL %>favicon.ico" />
 
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website" />
@@ -48,12 +47,7 @@
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2571971934615273" crossorigin="anonymous"></script>
   </head>
   <body>
-    <noscript>
-      <strong>
-        We're sorry but <%= htmlWebpackPlugin.options.title %> doesn't work properly without JavaScript enabled. Please
-        enable it to continue.
-      </strong>
-    </noscript>
     <div id="app"></div>
+    <script type="module" src="/src/main.js"></script>
   </body>
 </html>

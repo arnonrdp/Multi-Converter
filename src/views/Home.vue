@@ -1,22 +1,17 @@
+<script setup>
+import Card from '@/components/Card.vue'
+</script>
+
 <template>
-  <div class="home">
+  <main>
     <Card scale="Temperature" alt="termometer" />
     <Card scale="Length" alt="ruler" />
     <Card scale="Time" alt="clock" />
-  </div>
+  </main>
 </template>
 
-<script>
-import Card from "@/components/Card.vue";
-
-export default {
-  name: "Home",
-  components: { Card },
-};
-</script>
-
 <style scoped>
-.home {
+main {
   display: flex;
   flex-flow: row wrap;
   justify-content: center;

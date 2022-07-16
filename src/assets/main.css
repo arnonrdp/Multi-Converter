@@ -1,0 +1,73 @@
+@import './base.css';
+
+#app {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+
+  font-weight: normal;
+}
+
+a {
+  font-size: 1rem;
+  font-weight: bold;
+  color: #253846;
+  text-decoration: none;
+  transition: 0.4s;
+}
+
+a.router-link-exact-active {
+  color: #0e6eb3;
+}
+
+table {
+  margin: 0 auto;
+  background-color: #17233c;
+  padding: 24px;
+  border-radius: 12px;
+  border-spacing: 8px;
+}
+
+table h2 {
+  font-size: 1.1rem;
+  text-align: center;
+}
+
+table tr td {
+  text-align: left;
+}
+
+input {
+  color: #fff;
+  font-size: 1rem;
+  text-align: right;
+  outline: 0;
+  border: none;
+  border-bottom: 2px solid #253846;
+  background-color: transparent;
+  transition: 0.3s ease;
+}
+
+input:focus {
+  border-color: cadetblue;
+}
+
+/* Remove arrows from number input */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+input[type='number'] {
+  -moz-appearance: textfield;
+}
+
+tfoot tr td {
+  font-size: 0.9rem;
+  padding-top: 10px;
+  text-align: right;
+}
+input#decimal {
+  width: 30px;
+  text-align: center;
+}

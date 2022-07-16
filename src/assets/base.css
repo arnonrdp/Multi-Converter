@@ -1,0 +1,80 @@
+html {
+  font-size: 16px;
+}
+@media screen and (max-width: 720px) {
+  html {
+    font-size: 15px;
+  }
+}
+@media screen and (max-width: 640px) {
+  html {
+    font-size: 14px;
+  }
+}
+@media screen and (max-width: 560px) {
+  html {
+    font-size: 13px;
+  }
+}
+@media screen and (max-width: 480px) {
+  html {
+    font-size: 12px;
+  }
+  table > tr td input {
+    width: 110px;
+  }
+}
+@media screen and (max-width: 400px) {
+  html {
+    font-size: 11px;
+  }
+  table > tr td input {
+    width: 100px;
+  }
+}
+@media screen and (max-width: 320px) {
+  html {
+    font-size: 10px;
+  }
+  table > tr td input {
+    width: 90px;
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --color-background: var(--vt-c-black);
+    --color-background-soft: var(--vt-c-black-soft);
+    --color-background-mute: var(--vt-c-black-mute);
+
+    --color-border: var(--vt-c-divider-dark-2);
+    --color-border-hover: var(--vt-c-divider-dark-1);
+
+    --color-heading: var(--vt-c-text-dark-1);
+    --color-text: var(--vt-c-text-dark-2);
+  }
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  position: relative;
+  font-weight: normal;
+}
+
+body {
+  min-height: 100vh;
+  color: #ffffff;
+  background: #3e5151; /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #decba4, #3e5151); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #decba4, #3e5151); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  transition: color 0.5s, background-color 0.5s;
+  line-height: 1.6;
+  font-family: Avenir, Helvetica, Arial, sans-serif;
+  font-size: 1rem;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}

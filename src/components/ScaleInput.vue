@@ -1,12 +1,7 @@
 <template>
   <tr>
     <td>
-      <input
-        type="number"
-        :id="modelValue"
-        :value="modelValue"
-        @input="$emit('update:modelValue', $event.target.value)"
-      />
+      <input type="number" :id="modelValue" :value="modelValue" @input="$emit('update:modelValue', $event.target.value)" />
     </td>
     <td>
       <label :for="modelValue">
@@ -16,10 +11,10 @@
   </tr>
 </template>
 
-<script>
-export default {
-  name: "ScaleInput",
-  props: ["modelValue", "label"],
-  emits: ["update:modelValue"],
-};
+<script setup>
+defineProps({
+  modelValue: { type: String, required: true },
+  label: { type: String, required: true }
+})
+defineEmits(['update:modelValue'])
 </script>

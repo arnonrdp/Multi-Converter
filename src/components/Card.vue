@@ -7,11 +7,11 @@
   </router-link>
 </template>
 
-<script>
-export default {
-  name: "Card",
-  props: ["scale", "alt"],
-};
+<script setup>
+defineProps({
+  scale: { type: String, required: true },
+  alt: { type: String, required: true }
+})
 </script>
 
 <style scoped>
@@ -31,10 +31,6 @@ export default {
 
 .card:hover {
   box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
-}
-
-.container {
-  padding: 2px 16px;
 }
 
 img {
